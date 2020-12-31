@@ -1,0 +1,12 @@
+.nav-link {
+    font-size: 18px;
+    font-weight:500 ;
+}
+.navbar {
+    background: #CACACA;
+}
+
+.sign-up {
+    background: rgba(234, 233, 233, 0.29) !important;
+    border-radius: 10px !important;
+}
