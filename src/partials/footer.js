@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/navbar.css'
+import './styles/footer.css'
 
 import {
     BrowserRouter as Router,
@@ -25,14 +25,14 @@ export default function Footer() {
 
 
     const linkItems = listLinks.map((link) =>
-        <li>
+        <li className="pb-4">
             <Router>
                 <Link key={link.name} to={link.link}>{link.name}</Link>
             </Router>
         </li>
     );
     const aboutLinks = aboutLink.map((link) =>
-        <li>
+        <li className="pb-4">
             <Router>
                 <Link key={link.name} to={link.link}>{link.name}</Link>
             </Router>
