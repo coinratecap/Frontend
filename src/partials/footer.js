@@ -24,25 +24,25 @@ export default function Footer() {
     ]
 
 
-    const linkItems = listLinks.map((link) =>
-        <li className="pb-4">
+    const linkItems = listLinks.map((link, index) =>
+        <li className="pb-4" key={index}>
             <Router>
-                <Link key={link.name} to={link.link}>{link.name}</Link>
+                <Link key={link.index} to={link.link}>{link.name}</Link>
             </Router>
         </li>
     );
-    const aboutLinks = aboutLink.map((link) =>
-        <li className="pb-4">
+    const aboutLinks = aboutLink.map((link, index) =>
+        <li className="pb-4" key={index}>
             <Router>
-                <Link key={link.name} to={link.link}>{link.name}</Link>
+                <Link key={link.index} to={link.link}>{link.name}</Link>
             </Router>
         </li>
     );
     return (
         <footer className="pt-4 pb-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
+            <div className="container">
+                <div className="row mx-auto">
+                    <div className="col-md-4">
                         <img src="./assets/logo.svg" height="50" width="50" />
                         <p className="mt-3 text-light about">Lorem ipsum dolor sit amet,<br />
                         consectetur adipiscing elit<br />
@@ -50,15 +50,12 @@ export default function Footer() {
 
                     </div>
                     <div className="col-md-4">
-
                         <ul>
                             <h5>About Us</h5>
                             {linkItems}
                         </ul>
                     </div>
                     <div className="col-md-4">
-
-
                         <ul>
                             <h5>About Us</h5>
                             {aboutLinks}
