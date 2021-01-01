@@ -1,11 +1,18 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <>
-      CoinRateCap
-      
-      </>
+
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+      </Switch>
+    </Router>
+
   );
 }
 
