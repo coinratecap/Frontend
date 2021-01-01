@@ -4,7 +4,7 @@ import DataTable from 'react-data-table-component';
 const customStyles = {
     rows: {
         style: {
-            minHeight: '50px', // override the row height
+            minHeight: '50px', // ovehttps://www.coingecko.com/coins/1/sparklineide the row height
         }
     },
 
@@ -66,23 +66,24 @@ const columns = [
     },
     {
         name: '7 days change',
-        selector: 'DaysChange_7',
+        selector: 'daysChange_7',
+        cell: row => <img src={row.daysChange_7} />,
         sortable: true,
     },
 ];
 const data = [
-    { id: 1, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "0.4333%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 2, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "4.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 3, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "55.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 4, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 5, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 6, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 7, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 8, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 9, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 10, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 11, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
-    { id: 12, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", DaysChange_7: "rr" },
+    { id: 1, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "0.4333%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 2, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "4.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 3, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "55.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 4, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 5, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 6, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 7, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 8, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 9, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 10, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 11, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 12, coin: 'Bitcoin', price: '$233,433.00', hr_1: "4.23%", hr_24: "3.22%", volume: "1.65%", liquidity: "$33,322.000", marketCap: "$233,433.00", daysChange_7: "https://www.coingecko.com/coins/1/sparkline" },
 
 ];
 
