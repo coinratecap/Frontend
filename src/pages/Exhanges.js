@@ -6,7 +6,7 @@ import ExchangeComponent from '../components/Exchanges/exchangesTable';
 export default function Exchange() {
     return (
         <Blank>
-            <ExchangeHeader />
+            <ExchangeHeader title="Top Cryptocurrency Exchanges" />
             <ExchangeComponent />
         </Blank>
     )

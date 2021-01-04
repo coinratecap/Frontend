@@ -106,7 +106,6 @@ let links = [
 
 const linkItems = links.map((link, index) =>
     <Router>
-
         <li className="nav-item active mx-2" key={index}>
             {/* <Link className="nav-link" to={link.link}>{link.name}</Link> */}
             <a className="nav-link" key={index} href={link.link}>{link.name}</a>
