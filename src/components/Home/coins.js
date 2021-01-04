@@ -1,6 +1,11 @@
 import React from 'react';
-import DataTable from 'react-data-table-component';
-
+import CoinTable from 'react-data-table-component';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 const customStyles = {
     rows: {
         style: {
@@ -90,7 +95,7 @@ const data = [
 let links = [
     { name: "Newly Added", link: "/newly-added" },
     { name: "Defi", link: "/defi" },
-    { name: "Exchange", link: "/exchange" },
+    { name: "Exchanges", link: "/exchanges" },
     { name: "Wallet", link: "/wallet" },
     { name: "High/Low", link: "/high-low" },
     { name: "Trending", link: "/trending" },
@@ -100,9 +105,13 @@ let links = [
 
 
 const linkItems = links.map((link, index) =>
-    <li className="nav-item active mx-2" key={index}>
-        <a className="nav-link" key={index} href={link.link}>{link.name}</a>
-    </li>
+    <Router>
+
+        <li className="nav-item active mx-2" key={index}>
+            {/* <Link className="nav-link" to={link.link}>{link.name}</Link> */}
+            <a className="nav-link" key={index} href={link.link}>{link.name}</a>
+        </li>
+    </Router>
 );
 
 
@@ -125,6 +134,7 @@ const Coin = () => {
                                         <span className="navbar-toggler-icon"></span>
                                     </button>
                                     <div className="collapse navbar-collapse justify-content-center" id="subnavbarNav">
+
                                         <ul className="navbar-nav">
                                             {linkItems}
                                         </ul>
@@ -138,7 +148,7 @@ const Coin = () => {
                                     <button className="btn sign-up mx-1">Search Coin</button>
                                 </div>
                             </nav>
-                            <DataTable
+                            <CoinTable
                                 noHeader={true}
                                 columns={columns}
                                 customStyles={customStyles}

@@ -1,10 +1,10 @@
 import React from 'react';
-import Auth from '../layouts/Auth';
+import Blank from '../layouts/Blank';
 import CoinComponent from '../components/Home/coins';
 export default function Home() {
     return (
-        <Auth>
+        <Blank>
             <CoinComponent />
-        </Auth>
+        </Blank>
     )
 }

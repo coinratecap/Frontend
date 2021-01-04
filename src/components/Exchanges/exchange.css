@@ -1,0 +1,13 @@
+#exchange-header {
+    height:200px;
+    text-align:center;
+    background:#efc354;
+}
+.bg-wrapper {
+     height:90px;
+     align-items: flex-end;
+     background:#e1dfe9;
+     color:#0b216a;
+     border-top-left-radius: 50px;
+     border-top-right-radius: 50px;
+}
