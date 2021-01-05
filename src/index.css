@@ -1,0 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+  /* font-family: 'Lato',
+    sans-serif; */
+    font-family: 'PT Sans',
+    sans-serif;
+}
+
+.coin-header {
+  background: rgba(202, 202, 202, 0.22) !important;
+  mix-blend-mode: multiply;
+}
+
+.currency_input_group {
+  width:0 !important;
+}
