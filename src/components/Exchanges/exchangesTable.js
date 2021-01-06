@@ -54,20 +54,20 @@ const columns = [
 ];
 
 const data = [
-    { id: 1, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 2, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 3, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" }, { id: 8, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 4, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 5, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 6, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 7, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 9, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 10, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 11, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 12, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 13, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 14, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
-    { id: 15, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 1, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "3.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 2, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "5.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 3, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "54.65%", trust: "https://www.coingecko.com/coins/1/sparkline" }, { id: 8, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 4, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "53.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 5, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "153.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 6, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "124.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 7, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "1353.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 9, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "135.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 10, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "12.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 11, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "13.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 12, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "18.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 13, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "188.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 14, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "109.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
+    { id: 15, name: 'Binance', volume: '$233,433.00', website: "https://Binance.com", volume: "132.65%", trust: "https://www.coingecko.com/coins/1/sparkline" },
 ];
 
 const Exchanges = () => {
