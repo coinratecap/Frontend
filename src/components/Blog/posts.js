@@ -23,7 +23,7 @@ let blogposts = postsList.map(post =>
                 <div className="card-body">
                     <h5 className="card-title">{post.title}</h5>
                     <p className="card-text">{post.content}</p>
-                    <a href="blog-details">Read Post</a>
+                    <a href="/blog-details">Read Post</a>
 
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
