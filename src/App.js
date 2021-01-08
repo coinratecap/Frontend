@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import Exchanges from './pages/Exhanges'
 import Blog from './pages/Blog'
+import BlogDetails from './pages/BlogDetails'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/blog">
           <Blog />
+        </Route>
+        <Route path="/blog-details">
+          <BlogDetails />
         </Route>
       </Switch>
     </Router>
