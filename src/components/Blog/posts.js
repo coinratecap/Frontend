@@ -13,6 +13,7 @@ let postsList = [
     { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
 
 ]
+let hrefLink = '/blog-details';
 let blogposts = postsList.map(post =>
     <div className="card mb-3 shadow-sm border-0" style={{ maxWidth: "auto" }}>
         <div className="row no-gutters">
@@ -23,7 +24,7 @@ let blogposts = postsList.map(post =>
                 <div className="card-body">
                     <h5 className="card-title">{post.title}</h5>
                     <p className="card-text">{post.content}</p>
-                    <a href="/blog-details">Read Post</a>
+                    <a href={hrefLink}>Read Post</a>
 
                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
