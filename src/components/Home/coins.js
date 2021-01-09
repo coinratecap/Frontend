@@ -9,9 +9,17 @@ import {
 const customStyles = {
     rows: {
         style: {
-            minHeight: '50px', // ovehttps://www.coingecko.com/coins/1/sparklineide the row height
-        }
+            minHeight: '75px',
+            borderBottomWidth: "1px",
+            outlineColor: "#f7f8fb",
+            '&:hover': {
+                boxShadow: "rgba(0, 0, 0, 0.1) 0px 0px 20px",
+                transition: "all 200ms ease- out 0s",
+            },
+        },
     },
+
+
 
 };
 const conditionalStyles = [
@@ -33,7 +41,7 @@ const columns = [
     {
         name: 'Coin',
         selector: 'coin',
-        cell: row => <div> <img src="./assets/btclogo.svg" className="pr-1" />{row.coin}</div>,
+        cell: row => <div> <a href="#"><img src="./assets/btclogo.svg" className="pr-1" /><b>{row.coin}</b></a> </div>,
         sortable: true,
     },
     {
@@ -107,7 +115,6 @@ let links = [
 const linkItems = links.map((link, index) =>
     <Router>
         <li className="nav-item active mx-2" key={index}>
-            {/* <Link className="nav-link" to={link.link}>{link.name}</Link> */}
             <a className="nav-link" key={index} href={link.link}>{link.name}</a>
         </li>
     </Router>
@@ -117,8 +124,9 @@ const linkItems = links.map((link, index) =>
 const Coin = () => {
     return (
         <>
+
             <section>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row">
                         <div className="col-md-12">
                             <nav className="navbar navbar-expand-lg navbar-light coin-header mt-5">
@@ -138,15 +146,10 @@ const Coin = () => {
                                             {linkItems}
                                         </ul>
                                     </div>
-                                    <div className="input-group-prepend">
-                                        <button className="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Show rows</button>
-                                        <div className="dropdown-menu">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                        </div>
-                                    </div>
-                                    <button className="btn sign-up mx-1">Search Coin</button>
+
                                 </div>
                             </nav>
+
                             <CoinTable
                                 noHeader={true}
                                 columns={columns}

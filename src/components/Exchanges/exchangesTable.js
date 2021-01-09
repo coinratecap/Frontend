@@ -4,16 +4,18 @@ import ExchangeTable from 'react-data-table-component';
 const customStyles = {
     rows: {
         style: {
-            minHeight: '50px',
+            minHeight: '75px',
+            borderBottomWidth: "1px",
+            outlineColor: "#f7f8fb",
+            '&:hover': {
+                boxShadow: "rgba(0, 0, 0, 0.1) 0px 0px 20px",
+                transition: "all 200ms ease- out 0s",
+            },
         },
-        stripedStyle: {
-            backgroundColor: "#E5E5E5;"
-        },
-
     },
     headRow: {
         style: {
-            backgroundColor: "#c4c4c4",
+            backgroundColor: "#eff0f3",
         }
     },
     headCells: {
@@ -33,6 +35,7 @@ const columns = [
     {
         name: 'Name',
         selector: 'name',
+        cell: row => <div> <img src="./assets/btclogo.svg" className="pr-1" />{row.name}</div>,
         sortable: true,
     },
     {
@@ -81,7 +84,6 @@ const Exchanges = () => {
                                 noHeader={true}
                                 columns={columns}
                                 data={data}
-                                striped={true}
                                 customStyles={customStyles}
                             />
                         </div>

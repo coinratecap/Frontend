@@ -1,34 +1,26 @@
 import React from 'react';
-import PopularPost from './popularposts'
+import PopularPost from './recentPosts'
 
 let postsList = [
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
-    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer" },
+    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer", author: "Wisdom Ekpot", time: "27th October,2020", img: "https://images.pexels.com/photos/4025825/pexels-photo-4025825.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" },
+    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer", author: "Wisdom Ekpot", time: "27th October,2020", img: "https://images.pexels.com/photos/6120166/pexels-photo-6120166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" },
+    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer", author: "Wisdom Ekpot", time: "27th October,2020", img: "https://images.pexels.com/photos/6120205/pexels-photo-6120205.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" },
+    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer", author: "Wisdom Ekpot", time: "27th October,2020", img: "https://images.pexels.com/photos/6266299/pexels-photo-6266299.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" },
+    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer", author: "Wisdom Ekpot", time: "27th October,2020", img: "https://images.pexels.com/photos/6266301/pexels-photo-6266301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" },
+    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer", author: "Wisdom Ekpot", time: "27th October,2020", img: "https://images.pexels.com/photos/6266307/pexels-photo-6266307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" },
+    { title: "The New Boston Coin", content: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer", author: "Wisdom Ekpot", time: "27th October,2020", img: "https://images.pexels.com/photos/5583958/pexels-photo-5583958.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" },
+
 
 ]
 let hrefLink = '/blog-details/';
-let blogposts = postsList.map((post, index) =>
-    <div className="card mb-3 shadow-sm border-0" style={{ maxWidth: "auto" }}>
-        <div className="row no-gutters">
-            <div className="col-md-4">
-                <img src="https://images.pexels.com/photos/2068664/pexels-photo-2068664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" className="card-img" alt="..." />
-            </div>
-            <div className="col-md-8">
-                <div className="card-body">
-                    <h5 className="card-title">{post.title}</h5>
-                    <p className="card-text">{post.content}</p>
-                    <a href={hrefLink + index}>Read Post</a>
-
-                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
+let blogposts = postsList.slice(0, 6).map((post, index) =>
+    <div class="card--item" >
+        <img class="card-image" src={post.img} />
+        <div class="text-block">
+            <h4>{post.title}</h4>
+            <p class="location">
+                {post.author}
+            </p>
         </div>
     </div>
 )
@@ -36,20 +28,11 @@ let blogposts = postsList.map((post, index) =>
 
 function posts() {
     return (
-        <section>
-            <div className="container">
-                <div className="row my-5">
-                    <div className="col-md-8">
-                        <div className="row" >
-                            <div className="col-md-12">
-                                {blogposts}
-                            </div>
-                        </div>
-                    </div>
-                    <PopularPost />
-                </div>
+        <section id="container" class="my-5">
+            <div class="card-list">
+                {blogposts}
             </div>
-        </section >
+        </section>
     )
 }
 

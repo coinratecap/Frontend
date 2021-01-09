@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img src="./assets/logo.svg" height="50" width="50" />
+                    <img src="./assets/logo.svg" width="40" height="40" loading="lazy" />
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@ export default function Navbar() {
                         {linkItems}
                     </ul>
                 </div>
-                <button className="btn sign-up">Sign up</button>
+                <button className="btn btn-warning px-4 border-0">Sign up</button>
             </div>
 
         </nav>

@@ -5,7 +5,6 @@ import PostDetails from '../components/Blog/postDetails'
 function BlogDetails(props) {
     return (
         <Blank>
-            <ExchangeHeader title="Cryptocurrency Blog Posts" />
             <PostDetails />
         </Blank>
     );

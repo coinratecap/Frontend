@@ -1,0 +1,71 @@
+.top-currency {
+    color: rgba(19, 23, 32, 0.9);
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.cur-card{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 50px 0px;
+    min-width: unset;
+    width: calc(100% - 32px); 
+    max-width: unset;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    margin-left: 0px;
+    padding: 32px;
+    z-index: unset;
+
+
+
+    overflow: visible;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 32px 1fr 14px;
+    column-gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(19, 23, 32);
+}
+
+.world {
+    background-color: rgba(10, 193, 142, 0.1);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.cur-name {
+    max-width: 60px;
+    align-self: center;
+}
+.empty {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.graph {
+    transition: background-color 0.1s linear 0s,
+    color 0.1s linear 0s;
+    text-align: center;
+
+}
+
+.graph img {
+    width: auto !important;
+    height:60px;
+}

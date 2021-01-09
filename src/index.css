@@ -1,10 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
 * {
-  /* font-family: 'Lato',
-    sans-serif; */
-    font-family: 'PT Sans',
+    font-family: 'Nunito',
     sans-serif;
+
+
 }
 
 .coin-header {
@@ -14,4 +14,8 @@
 
 .currency_input_group {
   width:0 !important;
+}
+
+body {
+  background-color: #fbfcff !important;
 }
