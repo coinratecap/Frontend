@@ -14,11 +14,11 @@ let postsList = [
 ]
 let hrefLink = '/blog-details/';
 let blogposts = postsList.slice(0, 6).map((post, index) =>
-    <div class="card--item" >
-        <img class="card-image" src={post.img} />
-        <div class="text-block">
+    <div className="card--item" >
+        <img className="card-image" src={post.img} />
+        <div className="text-block">
             <h4>{post.title}</h4>
-            <p class="location">
+            <p className="location">
                 {post.author}
             </p>
         </div>
@@ -28,8 +28,8 @@ let blogposts = postsList.slice(0, 6).map((post, index) =>
 
 function posts() {
     return (
-        <section id="container" class="my-5">
-            <div class="card-list">
+        <section id="container" className="my-5">
+            <div className="card-list">
                 {blogposts}
             </div>
         </section>

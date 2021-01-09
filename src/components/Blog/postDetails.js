@@ -9,9 +9,9 @@ export default function postDetails() {
                     <div className="col-md-10 offset-md-1 my-5">
                         <div className="autor-details">
                             <img src="https://images.pexels.com/photos/844127/pexels-photo-844127.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="blog-post-image" alt="..." />
-                            <div class="text-block">
+                            <div className="text-block">
                                 <h4>Bitcoin murders all crypto currency exchanges</h4>
-                                <p class="location">
+                                <p className="location">
                                     Wisdom Ekpot
                                 </p>
                             </div>

@@ -17,7 +17,7 @@ function market(props) {
                     <div className="cur-name">Bitcoin Cash</div>
                     <div className="empty"></div>
                 </div>
-                <div class="graph">
+                <div className="graph">
                     <img src="https://www.coingecko.com/coins/1/sparkline" />
                 </div>
             </div>

@@ -12,17 +12,17 @@ export default function recentPosts() {
 
     ]
     let popularPosts = postsList.map(post =>
-        <div class="col-md-4 my-3">
-            <div class="card border-0 shadow-sm" >
-                <img src="https://images.pexels.com/photos/844127/pexels-photo-844127.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title">{post.title}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Wisdom Ekpot -  July 19, 2019</h6>
+        <div className="col-md-4 my-3">
+            <div className="card border-0 shadow-sm" >
+                <img src="https://images.pexels.com/photos/844127/pexels-photo-844127.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{post.title}</h5>
+                    <h6 className="card-subtitle mb-2 text-muted">Wisdom Ekpot -  July 19, 2019</h6>
 
-                    <p class="card-text">{post.content}...</p>
+                    <p className="card-text">{post.content}...</p>
                 </div>
-                <div class="card-body">
-                    <a href="#" class="card-link">Read More</a>
+                <div className="card-body">
+                    <a href="#" className="card-link">Read More</a>
                 </div>
 
             </div >
@@ -31,13 +31,13 @@ export default function recentPosts() {
     )
     return (
         <section className="my-5">
-            <div class="container">
+            <div className="container">
                 <div className="row">
                     <div className="col-md-12 my-3">
                         <h4>Recent Posts</h4>
                     </div>
                 </div>
-                <div class="row">
+                <div className="row">
                     {popularPosts}
                 </div>
             </div>
